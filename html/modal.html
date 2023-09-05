@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal</title>
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+<div class="login">
+<h1 class="login__text">Добро пожаловать!</h1>
+<p class="login__subtext">Войти в систему чтобы торговать в системе</p>
+<img src="../assets/closebtn.svg" alt="x">
+
+<form action="">
+  <label for="username">Логин</label>
+  <input type="text" id="username" name="username" class="login__input" placeholder="Введите логин" required/>
+
+  <label for="password">Пароль</label>
+  <input type="password" id="password" name="password" class="login__input input__icon__parent" placeholder="Введите пароль" required/>
+  <img class="input__icon" src="../assets/eye-closed.svg" alt="">
+  <a class="input___anchor" href="#">Забыли пароль?</a>
+
+  <button class="modal__btn__enter">Войти</button>
+  <div class="modal__line"></div>
+  <p class="modal__subtext">Хотите стать продавцом?</p>
+  <div class="modal__line"></div>
+
+  <button class="modal__btn__application btn__bg">Подать заявку</button>
+</form>
+</div>
+
+
+
+<!--2nd modal-->
+
+<div class="modal__forgot">
+  <img src="../assets/forgot-icon.svg" alt="forgot">
+  <p class="modal__forgot__text">Забыли пароль? Для восстановления пароля обратитесь администратору</p>
+  <button class="modal__btn__application">
+    <img src="../assets/phone.svg" alt="">
+    <a href="#">+998 97 450 45 00</a>
+  </button>
+
+</div>
+</body>
+</html>

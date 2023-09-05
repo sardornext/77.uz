@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
+.login {
+  width: 379px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start  ;
+  justify-content: flex-start;
+  margin: 20px ;
+}
+
+.login__text{
+  color: #16191D;
+  font-family: 'Inter' , sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+.login__subtext{
+  color:  #8E9297;
+  font-family: 'Inter' , sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 18.2px */
+  margin-bottom: 28px;
+}
+
+/*form{*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*}*/
+
+.login__input{
+  width: 338px;
+  height: 48px;
+  border-radius: 8px;
+  background: #F5F5F5;
+  border-style: none;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  font-family: 'Inter' , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+}
+
+.login__input::placeholder{
+  color: #8E9297;
+}
+.input__icon__parent{
+  position: relative;
+}
+.input__icon{
+  height: 44px;
+  padding: 10px 10px 10px 12px;
+  top: 50%;
+
+}
+
+.input___anchor{
+  color: #388FF3;
+  text-align: right;
+  font-family: 'Inter' , sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 15.6px */
+  margin-left: 20px;
+}
+
+.modal__btn__enter, .modal__btn__application{
+  width: 338px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 8px;
+  background:  #388FF3;
+  padding: 11px 28px 12px 28px;
+  color:  #FFF;
+  font-family: 'Inter' , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+  margin-top: 64px;
+}
+
+.modal__btn__enter:hover{
+  background: #1E7BE6;
+}
+
+.btn__bg{
+  color: #388FF3;
+  background: #ffffff;
+  border: 1px solid #388FF3;
+  margin-top: 12px;
+}
+
+.modal__subtext{
+  color:  #8E9297;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 15.6px */
+}
+
+.modal__forgot__text {
+  color:  #8E9297;
+  text-align: center;
+  font-family: 'Inter' , sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+}

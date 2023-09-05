@@ -27,9 +27,9 @@
         <img class="uz-icon" alt="logo" src="../assets/logo.svg">
       </div>
     </div>
-    <div class="button">
-      <div class="text">Войти</div>
-      <img class="phone-icon" alt="" src="../assets/login-04.svg">
+    <div class="header__button">
+      <div class="button__text">Войти</div>
+      <img class="button__icon" alt="" src="../assets/login-04.svg">
     </div>
   </div>
 </header>
@@ -38,16 +38,61 @@
     <div class="search">
       <form action="">
         <img class="search-01-icon" alt="" src="../assets/search-01.svg">
-        <input type="text" placeholder="Что вы ищите?">
-
+        <input id="search-input" type="text" placeholder="Что вы ищите?">
         <button class="search-btn">
           Поиск
         </button>
       </form>
+      <div id="suggestions-container">
+        <div id="suggestions" class="autocomplete-suggestions" style="display: none;"></div>
 
+      </div>
     </div>
   </div>
 
+<!--<script>-->
+<!--  // Sample suggestions data (you can replace this with your data source)-->
+<!--  const suggestions = [-->
+<!--    "Suggestion 1",-->
+<!--    "Suggestion 2",-->
+<!--    "Suggestion 3",-->
+<!--    "Suggestion 4",-->
+<!--    "Suggestion 5",-->
+<!--  ];-->
+
+<!--  const searchInput = document.getElementById("search-input");-->
+<!--  const suggestionsContainer = document.getElementById("suggestions-container");-->
+
+<!--  // Function to display suggestions-->
+<!--  function displaySuggestions() {-->
+<!--    const userInput = searchInput.value.toLowerCase();-->
+<!--    const matchingSuggestions = suggestions.filter((suggestion) =>-->
+<!--      suggestion.toLowerCase().includes(userInput)-->
+<!--    );-->
+
+<!--    const suggestionList = matchingSuggestions.map((suggestion) => {-->
+<!--      return `<div class="suggestion">${suggestion}</div>`;-->
+<!--    });-->
+
+<!--    suggestionsContainer.innerHTML = suggestionList.join("");-->
+
+<!--    if (userInput === "") {-->
+<!--      suggestionsContainer.innerHTML = ""; // Clear suggestions if the input is empty-->
+<!--    }-->
+<!--  }-->
+
+<!--  // Event listener for input changes-->
+<!--  searchInput.addEventListener("input", displaySuggestions);-->
+
+<!--  // Event listener for suggestion click (you can customize this)-->
+<!--  suggestionsContainer.addEventListener("click", (e) => {-->
+<!--    if (e.target.classList.contains("suggestion")) {-->
+<!--      searchInput.value = e.target.textContent;-->
+<!--      suggestionsContainer.innerHTML = ""; // Clear suggestions when a suggestion is clicked-->
+<!--    }-->
+<!--  });-->
+
+<!--</script>-->
 
 
   <h1>Категории</h1>
@@ -517,17 +562,32 @@
       <div class="footer__logo">
         <img src="../assets/logo.svg" alt="">
       </div>
-      <div class="footer__text">
-        <p class="footer__text-title">77.uz</p>
-        <p class="footer__text-subtitle">Все права защищены</p>
-      </div>
+        <p class="footer__text">
+          77.uz marketplace - это виртуальная платформа в Узбекистане,
+          которая облегчает <br> покупки и продажи, связывая продавцов с потенциальными клиентами.
+        </p>
+
       <div class="footer__social">
-        <img src="../assets/instagram.svg" alt="">
-        <img src="../assets/facebook.svg" alt="">
-        <img src="../assets/telegram.svg" alt="">
+
+        <img src="../assets/symbol-social.png" alt="">
+        <p class="footer__social__text">Доска объявлений</p>
+
+        <img src="../assets/symbol-social.png" alt="">
+        <p class="footer__social__text">Условия пользования</p>
+
+        <img src="../assets/symbol-social.png" alt="">
+        <p class="footer__social__text">+998 88 500 50 00</p>
       </div>
     </div>
+
+
   </footer>
+<div class="footer__under">
+  <p class="footer__text-under">© 77.uz</p>
+  <p class="footer__subtext-under"> 2023. Все права защищены</p>
+  <img src="../assets/horse-logo.svg" alt="horse logo">
+  <img src="../assets/uic-Group.svg" alt="uic group">
+</div>
 
 
 
